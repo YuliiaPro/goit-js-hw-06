@@ -4,7 +4,7 @@ const refs = {
 };
 const onInputChange = (event) => {
      console.log(event.currentTarget.value);
-     refs.nameLabel.textContent = event.currentTarget.value;
+     refs.nameLabel.textContent = event.currentTarget.value  || 'Anonymous';
  };
  refs.input.addEventListener('input', onInputChange);
  
